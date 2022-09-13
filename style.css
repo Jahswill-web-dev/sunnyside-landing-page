@@ -34,7 +34,12 @@ nav{
     height: 40px;
     font-family: 'Barlow', sans-serif;
 }
-
+nav a {
+    color: #ffff;
+}
+.contact a{
+    color:black
+}
 .sub__nav img{
   height: 1.6rem;
 }
@@ -118,6 +123,7 @@ header{
     font-weight: 900;
     line-height: 1.5;
     font-family: 'Fraunces', serif; 
+    width: 50%;
 }
 
  .wrapper{
@@ -183,6 +189,7 @@ header{
     margin-bottom: 1.5rem;
 }
 .graphic-section h1, .photo h1{
+    
     font-size: 25px;
     margin-bottom: .8rem;
     font-family: 'Fraunces', sans-serif;
@@ -277,8 +284,15 @@ footer h2{
     display: flex;
     gap: 2rem;
 }
+
 .show{
-    visibility: visible;
+    display: none;
+}
+/* mobile view */
+
+@media(max-width:800px){
+   .show{
+    /* visibility: visible; */
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -289,15 +303,9 @@ footer h2{
     align-items: center;
     gap: 1.5rem;
     padding: 1rem;
-}
-/* mobile view */
-
-@media(max-width:800px){
+} 
     .hamburger{
         display: block;
-    }
-    .show{
-        /* display: flex; */
     }
     .mobile-menu{
         display: flex;
